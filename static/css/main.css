@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+
+}
+.content{
+    
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+#content{
+    width: 30%;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 10px;
+}
+table{
+    margin: auto;
+    margin-top: 7px;
+}
