@@ -48,7 +48,7 @@ def update(id):
             db.session.commit()
             return redirect('/')
         except:
-            return "There was an issue while updating"
+            return "There was an issue during the update"
     else:
         return render_template('update.html', task=task)
 
