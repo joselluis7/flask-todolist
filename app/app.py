@@ -2,13 +2,14 @@
 from flask import Flask, render_template, url_for, request, redirect
 from app.extensions import database
 from app.extensions.database import db
+from app.extensions import appearance
 from app.models.tables import Todo
 
 
 app = Flask(__name__)
 app.config.from_object('settings')
 database.init_app(app)
-
+appearance.init_app(app)
 
 @app.route('/', methods=['GET','POST'])
 def index():
