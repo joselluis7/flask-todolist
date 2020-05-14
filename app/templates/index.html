@@ -4,8 +4,17 @@
 
 
 {% block content %}
-
-
+{% with messages = get_flashed_messages () %}
+    {% if messages %}
+        {% for message in messages %}
+        <div class="row">
+            <div class="center col-md-12">
+                <p class="flashes">{{ message }} </p>
+            </div>
+        </div>
+        {% endfor %}
+    {% endif %}
+{% endwith %}
 <div id="content">
     <h2 class="text-center">TO DO LIST WITH FLASK</h2>
     <div class="center area">
