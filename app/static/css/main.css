@@ -1,24 +1,71 @@
-body{
-    margin: 0;
-    font-family: sans-serif;
+html, body{
+    height: 100%;
 }
-.content{
-    
-    margin: auto;
-    width: 50%;
-    text-align: center;
+html #all{
+    height: 100%;
+}
+#all{
+    min-height: 100%;
+    position: relative;
+}
+#header{
+    width: 100%;
+    padding: 10px 0 10px 15px;
+    text-align: left;
+    color: #fff;
+    background: #000;
+    margin-bottom: 20px;
+}
+#logo{
+    font-size: 1em;
+    font-weight: bold;
+    color: #03a5fc;
 }
 #content{
-    width: 30%;
+    padding-bottom: 30px;
 }
-table, th, td{
-    border: 1px solid black;
-    border-collapse: collapse;
+.center{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-th, td{
+.flashes{
+    text-align: center;
     padding: 10px;
+    margin: 0 0;
+    background: #FFD6A3;
+    color: #000;
+    width: 400px;
 }
-table{
-    margin: auto;
-    margin-top: 7px;
+#footer{
+    width: 100%;
+    font-size: 1em;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: #fff;
+    background: #000;
+    position: fixed;
+    bottom: 0;
+}
+#content {
+	padding-bottom: 30px;
+}
+.area{
+    margin: 30px;
+}
+.icon{
+    margin: 5px;
+}
+.update-icon{
+    color: #000;
+} 
+.delete-icon{
+    color: red;
+}
+.date{
+    color: #666666;
+}
+th{
+    text-align: center;
 }
