@@ -12,8 +12,7 @@ database.init_app(app)
 appearance.init_app(app)
 
 @app.route('/', methods=['GET','POST'])
-def index():
-     
+def index(): 
     if request.method == 'POST':
         task_content = request.form['content']
         new_task = Todo(content=task_content)
