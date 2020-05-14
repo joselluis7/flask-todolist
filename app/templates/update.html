@@ -10,9 +10,9 @@
     <div class="center area">
         <form class="form-inline" method="POST" action="/update/{{ task.id }}">
             <div class="form-group mx-sm-3 mb-2">
-              <input type="text" class="form-control" name="content" value="{{ task.content }}">
+              <input type="text" class="form-control" id="contentInput" name="content" value="{{ task.content }}">
             </div>
-            <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
+            <button id="submitButton" type="submit" class="btn btn-primary mb-2">Confirm identity</button>
           </form>
     </div>
 </div>

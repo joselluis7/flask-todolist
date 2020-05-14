@@ -11,12 +11,11 @@
     <div class="center area">
         <form action="/" method="POST" class="form-inline">
                 <div class="form-group mx-sm-3 mb-2" >
-                    <input name="content" type="text" class="form-control"  placeholder="Eg: Wash the dishes">
+                    <input id="contentInput" name="content" type="text" class="form-control"  placeholder="Eg: Wash the dishes">
                 </div>
-                <button type="submit" class="btn btn-primary mb-2">Add Task</button>
-                
+                <button id="submitButton" type="submit" class="btn btn-primary mb-2">Add Task</button>
         </form>
-    </div>
+    </div>  
     <div class="center area">
         {% if tasks | length < 1 %}
         <h4>THER IS NO TASK ADDED</h4>
